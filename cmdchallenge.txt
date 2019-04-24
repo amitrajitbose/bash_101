@@ -1,0 +1,40 @@
+search_for_files_containing_a_string/
+grep -l "500" *
+
+find_string_in_a_file/
+grep -w "GET" access.log
+
+last_lines/
+tail -n 10 file.txt
+
+search_for_file_by_extension/
+ls | grep "access.log"
+
+search_for_string_in_files_recursive/ suppress the filename as well
+grep -rh " 500"
+
+search_all_IP_address_from_files_recursively/
+grep -rhoP '\d+\.\d+\.\d+\.\d+'
+
+delete_all_file_in_pwd/
+rm -rf /*
+
+count_files/
+ls -A | wc -l
+
+sort_contents_in_a_file/
+cat filename.txt | sort
+
+number_of_lines_that_match_a_keyword_in_a_file/
+grep "KEYWORD" file.txt | wc -l
+
+split_on_a_character/ given 1;2;3;4 - print the numbers on a new line each
+tr ';' '\n' < file.txt
+
+print_1_100_space_sep_in_series/
+seq -s' ' 1 1 100
+
+remove_file_ending_with_.doc_recursively/
+rm -rf /* .doc
+
+
